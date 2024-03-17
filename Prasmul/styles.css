@@ -1,0 +1,334 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 200vh;
+  background-color: #00376a;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  background-color: aqua;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+/* HEADER */
+
+header .container {
+  justify-content: space-between;
+  height: 60px;
+  background-color: #00376a;
+}
+
+header .container .nav-header {
+  width: 490px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container a {
+  font-size: 13px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: gray;
+}
+
+header .container .nav-header a.btn {
+  display: inline-block;
+  background-color: rgb(61, 177, 102);
+  color: white;
+  font-weight: bold;
+  padding: 0 5px;
+  height: 60px;
+  width: 120px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* STICKY NAV */
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 999;
+}
+
+nav .container {
+  justify-content: space-between;
+  height: 91px;
+  background-color: white;
+}
+
+nav .container ul.sticky-nav li.item {
+  display: inline-block;
+  list-style: none;
+  font-size: 13px;
+  margin-left: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+/* SECTION HERO */
+section.hero {
+  height: calc(130vh - 60px - 91px);
+  background-image: url(assets/Banner.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+section.hero .container {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* SECTION FACULTY */
+section.faculty {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 255px;
+  padding: 0px;
+}
+
+section.faculty div.item-faculty1 {
+  display: flex;
+  background-image: url(assets/prasmul1.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+section.faculty div.item-faculty2 {
+  display: flex;
+  background-image: url(assets/prasmul2.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+section.faculty div.item-faculty3 {
+  display: flex;
+  background-image: url(assets/prasmul3.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+section.faculty div.item-faculty4 {
+  display: flex;
+  background-image: url(assets/prasmul4.png);
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+section.faculty div.item-faculty div.box-faculty {
+  background-color: #00376a;
+  width: 32px;
+  height: 12px;
+}
+
+/* SECTION ABOUT */
+section.about {
+  height: 300px;
+  background-color: #00376a;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.about .left img {
+  width: 200px;
+  margin-left: 70px;
+  margin-top: 60px;
+}
+
+section.about .left h3 {
+  margin-left: 70px;
+  margin-right: 50px;
+  color: lightgrey;
+  font-size: 30px;
+  width: 320px;
+}
+
+section.about .right h1 {
+  margin-top: 60px;
+  margin-right: 70px;
+  color: white;
+  font-size: 36px;
+}
+
+section.about .right p {
+  margin-right: 70px;
+  color: white;
+  font-size: 9px;
+}
+
+section.about .right a {
+  color: white;
+  font-size: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECTION FLOATING IMG */
+section.floating-img {
+  position: relative;
+  top: 30px;
+  height: 190px;
+  width: 80%;
+  background-image: url(assets/gedung2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  z-index: 998;
+}
+
+/* SECTION VIDEO UNI */
+section.video-uni {
+  position: relative;
+  height: 673px;
+  background-image: url(assets/gedung1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section.video-uni .container.video-text {
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0);
+  opacity: 0.5;
+}
+
+section.video-uni .container.text {
+  position: absolute;
+  height: 673px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+section.video-uni .container.text a {
+  color: white;
+  font-size: 130px;
+}
+
+section.video-uni .container.text h1 {
+  margin-top: -60px;
+  color: white;
+  font-size: 42px;
+}
+
+section.video-uni .container.text h3 {
+  color: white;
+  margin-top: -20px;
+  font-size: 21px;
+}
+
+/* SECTION REGISTER */
+section.register {
+  justify-content: space-between;
+  display: flex;
+  height: 575px;
+}
+
+section.register .left {
+  background-image: url(assets/graduate.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+}
+
+section.register .right {
+  background-image: url(assets/gedung3.jpg);
+  background-color: #1e2d49;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+
+section.register .right h1 {
+    margin-top: 15%;
+    font-size: 28px;
+}
+
+section.register .right h3 {
+    color: #339966;
+    margin-bottom: 8px;
+}
+
+section.register .right p {
+    font-size: 18px;
+    padding: 0 100px 0 100px;
+}
+
+section.register .right a {
+    margin-top: 7%;
+    display: inline-block;
+    background-color: rgb(61, 177, 102);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 5px;
+    height: 60px;
+    width: 120px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* FOOTER */
+footer section.nav-buttons {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  bottom: 0;
+  right: 0;
+  width: 70px;
+  height: 150px;
+  font-size: 40px;
+  padding: 5px;
+}
+
+footer section.nav-buttons a.go-to-top-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-color: rgb(161, 160, 160);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  margin-bottom: 5px;
+}
+
+footer section.nav-buttons a.wa-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  background-color: rgb(126, 243, 68);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+}
